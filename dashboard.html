@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSync - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Welcome, <span id="userEmail"></span>!</h2>
+        <button id="logoutBtn">Logout</button>
+        
+        <h3>Log Your Learning</h3>
+        <form id="learningForm">
+            <input type="text" id="learningTitle" placeholder="What did you learn?" required>
+            <textarea id="learningDetails" placeholder="Details about your learning..." required></textarea>
+            <button type="submit">Add Entry</button>
+        </form>
+        
+        <h3>Your Learning Log</h3>
+        <ul id="learningList"></ul>
+    </div>
+    
+    <script src="dashboard.js"></script>
+</body>
+</html>
